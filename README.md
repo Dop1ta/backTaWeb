@@ -1,6 +1,6 @@
-#api:
+# api:
 
-#Ejemplos:
+# Ejemplos:
 
 # Datos de estudiante:
   >Gabriel Ruiz Burgos
