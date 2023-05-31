@@ -1,7 +1,9 @@
-# api:
+## api:
 
-# Ejemplos:
+## Ejemplos:
 
-# Datos de estudiante:
-  >Gabriel Ruiz Burgos
-  >Ingenieria Civil Informatica
+## Datos de estudiante:
+  ```
+  Gabriel Ruiz Burgos
+  Ingenieria Civil Informatica
+  ```
