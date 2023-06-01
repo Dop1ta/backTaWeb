@@ -1,7 +1,3 @@
-## api:
-
-## Ejemplos:
-
 ## Datos de estudiante:
   ```
   Gabriel Ruiz Burgos
@@ -12,11 +8,13 @@
 ### Create, List, Update, Delete
   ```
   CREATE = http://localhost:8000/api/perro/create
-    name: string
-    urlP: string
-    description: string
+    name: palmerita
+    urlP: photo
+    description: baila el doggy Style
+    JSON = {"name":"palmerita","urlP":"foto","description":"baila el doggy Style"}
+    JSON = {"name":"tepo tepo","urlP":"foto","description":"baila el doggy Style"}
+    JSON = {"name":"adjetivo","urlP":"foto","description":"baila el doggy Style"}
   ```
-  
   ```
   lIST DOGS = http://localhost:8000/api/perro/list
   ```
@@ -26,6 +24,8 @@
     name: string
     urlP: string
     description: string
+    JSON = {"description":"no le gusta el doggy Style"}
+    JSON = {"description":"le encanta el doggy Style"}
   ```
 
   ```
@@ -40,6 +40,8 @@
     idPersona: int
     fecha: date
     comentario: string
+    JSON = {"idDogI":"1","idDogC":"2"}
+    JSON = {"idDogI":"1","idDogC":"3"}
   ```
   
   ```

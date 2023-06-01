@@ -26,6 +26,11 @@ class InteraccionController extends Controller
             $interaccion = new Interaccion();
             $interaccion->idDogI = $request->idDogI;
             $interaccion->idDogC = $request->idDogC;
+
+            if($interaccion->idDogI == $interaccion->idDogC){
+                return response()->json(["error" => "No se puede interactuar con el mismo perro"], Response::HTTP_BAD_REQUEST);
+            }
+
             $interaccion->preference = $request->preference;
             $interaccion->save();
 
