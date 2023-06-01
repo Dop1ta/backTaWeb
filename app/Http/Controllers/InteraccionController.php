@@ -46,7 +46,7 @@ class InteraccionController extends Controller
     /**
      * Display the specified resource.
      */
-    public function list(Interaccion $interaccion, $id)
+    public function listOne(Interaccion $interaccion, $id)
     {
         try {
             $interaccion = Interaccion::where('idDogI', $id)->get();

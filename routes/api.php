@@ -27,8 +27,8 @@ Route::prefix('/perro')->group(function () use ($router) {
     $router->delete('delete/{id}', [PerroController::class, 'destroy']);
 });
 
-Route::prefix('/iteraccion')->group(function () use ($router) {
+Route::prefix('/interaccion')->group(function () use ($router) {
     $router->post('create', [InteraccionController::class, 'create']);
-    $router->get('list/{id}', [InteraccionController::class, 'show']);
+    $router->get('list/{id}', [InteraccionController::class, 'listOne']);
     $router->delete('delete/{id}', [InteraccionController::class, 'destroy']);
 });
