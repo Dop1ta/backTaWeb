@@ -24,6 +24,7 @@ class PerroController extends Controller
             $perro = new Perro();
             $perro->name = $request->name;
             $perro->urlP = $request->urlP;
+            $perro->sexo = $request->sexo;
             $perro->description = $request->description;
             $perro->save();
 
@@ -62,6 +63,7 @@ class PerroController extends Controller
             $perro = Perro::find($id);
             $perro->name = $request->name;
             $perro->urlP = $request->urlP;
+            $perro->sexo = $request->sexo;
             $perro->description = $request->description;
             $perro->save();
 

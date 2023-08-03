@@ -15,6 +15,7 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('urlP');
+            $table->string('sexo');
             $table->string('description'); 
             $table->timestamps();
         });
