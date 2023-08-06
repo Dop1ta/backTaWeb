@@ -17,9 +17,9 @@ class InteraccionRequest extends FormRequest
     public function rules()
     {
         return [
-            "idDogI" => "required|unique",
-            "idDogC" => "required|unique",
-            "preference" => "required|string|max:1",
+            "idDogI" => "required",
+            "idDogC" => "required",
+            "preference" => "required|string",
         ];
     }
 
